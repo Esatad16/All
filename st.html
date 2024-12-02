@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Style for the div */
+.styled-div {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+/* Default style for links */
+.styled-link {
+    color: #3498db;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+.styled-link:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Style for the active link (after clicking) */
+.active-link {
+    background-color: #3498db;
+    color: white;
+}
+
+    </style>
+    <script>
+        // Function to store which link was clicked
+function storeStyle(event) {
+    const clickedLink = event.target;
+    
+    // Store the link's index and class in localStorage
+    const links = document.querySelectorAll('.styled-link');
+    const index = Array.from(links).indexOf(clickedLink);
+    
+    localStorage.setItem('clickedLinkIndex', index);
+    localStorage.setItem('clickedLinkClass', 'active-link');
+    
+    // Apply styles to the clicked link
+    applyStyles(index);
+}
+
+// Function to apply styles based on stored data
+function applyStyles(index) {
+    const links = document.querySelectorAll('.styled-link');
+    
+    // Remove 'active-link' class from all links
+    links.forEach(link => link.classList.remove('active-link'));
+    
+    // Add 'active-link' class to the clicked link
+    //if (index >= 0 && index < links.length) {
+      //  links[index].classList.add('active-link');
+   // }
+}
+
+// On page load, check if a style was stored
+document.addEventListener('DOMContentLoaded', () => {
+    const storedIndex = localStorage.getItem('clickedLinkIndex');
+    if (storedIndex !== null) {
+        applyStyles(parseInt(storedIndex, 10));
+    }
+});
+
+    </script>
+</head>
+<body>
+    <div class="styled-div">
+        <a href="Music.html" class="styled-link" onclick="storeStyle(event)">Link 1</a>
+        <a href="#" class="styled-link" onclick="storeStyle(event)">Link 2</a>
+        <a href="#" class="styled-link" onclick="storeStyle(event)">Link 3</a>
+    </div>
+    
+</body>
+</html>
