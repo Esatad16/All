@@ -6,41 +6,103 @@
     <title>Document</title>
     <style>
         body {
-        background-color: lightblue;
-        font-family: Arial, sans-serif;
-    }
-    /* Styling the header */
-    h1 {
-        color: darkblue;
-        font-size: 20px;
-        font-family: 'Arial', sans-serif;
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-    }
-    /* Styling the link */
-    a {
-        color: rgb(0, 85, 119);
-        text-decoration: none;
-        font-weight: bold;
-    }
-    /* Styling the hovor */
-    a:hover {
-        color: darkorange;
-        text-decoration: underline;
-    }
-    
-        </style>
+  background-color: rgb(140, 151, 119);
+  font-family: Arial, sans-serif;
+}
+
+/* Styling the header */
+h1{
+  background-color: #9fbea8; /* Light grey background */
+  padding: 30px;             /* Padding inside the div */
+  border: 1px solid #ccc;    /* Light grey border */
+  border-radius: 10px;       /* Rounded corners */
+  text-align: center;        /* Center text inside the div */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 100%;          /* Max width for the div */
+  margin:0px;
+  font-size: 25px; 
+  color: brown;
+}
+h2 {
+  color: rgb(215, 215, 230);
+  font-size: 15px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+/* Style for the english music */
+.mainA {
+  background-color: #3a7474; /* Light grey background */
+  padding: 30px;             /* Padding inside the div */
+  border: 1px solid #ccc;    /* Light grey border */
+  border-radius: 10px;       /* Rounded corners */
+  text-align: center;        /* Center text inside the div */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 300px;          /* Max width for the div */
+  margin:0px;         /* Center div on the page */
+
+}
+/* Style for the amaharic music */
+.mainB {
+  background-color: #3a7474; /* Light grey background */
+  padding: 30px;             /* Padding inside the div */
+  border: 1px solid #ccc;    /* Light grey border */
+  border-radius: 10px;       /* Rounded corners */
+  text-align: center;        /* Center text inside the div */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 300px;          /* Max width for the div */
+  margin:0px;         /* Center div on the page */
+
+}
+
+/* Style for the ye bahil music */
+.mainC {
+  background-color: #3a7474; /* Light grey background */
+  padding: 30px;             /* Padding inside the div */
+  border: 1px solid #ccc;    /* Light grey border */
+  border-radius: 10px;       /* Rounded corners */
+  text-align: center;        /* Center text inside the div */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 300px;          /* Max width for the div */
+  margin:0px;         /* Center div on the page */
+
+}
+
+
+/* Style for the anchor inside the div */
+.A {
+  color: #79c514;            /* Blue text color */
+  font-size: 18px;           /* Font size for the link */
+  text-decoration: none;     /* Remove underline */
+  font-weight: bold;         /* Bold font */
+  display: inline-block;     /* Allows padding to be applied */
+  padding: 10px 15px;        /* Padding for the link */
+  border-radius: 5px;        /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the link */
+.A:hover {
+  background-color: #3498db; /* Blue background on hover */
+  color: white;              /* White text on hover */
+}
+
+</style>
 </head>
 <body>
     <h1>WELLCOME TO MOVIES PAGE</h1>
-    <div class="link-container">
-        <ul>
-            <li><a href="https://ww1.goojara.to/">Goojara Movies</a></li>
-            <li><a href="https://movies-show.com/">Yes Movies</a></li>
-            <li><a href="https://yts.mx/">Yts Movies</a></li>
-        </ul>
-
+    <div class="mainA">
+        <h2>GOOJARA MOVIES</h2>
+        <a href="https://ww1.goojara.to/" class="A" target="_self">CLICK ME</a>
+    </div>
+    <div class="mainB">
+        <h2>YES MOVIES</h2>
+        <a href="https://movies-show.com/" class="A" target="_self">CLICK ME</a>
+    </div>
+    <div class="mainC">
+        <H2>YTS MOVIES</H2>
+        <a href="https://yts.mx/" class="A" target="_self">CLICK ME</a>
     </div>
 </body>
 </html>
