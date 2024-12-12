@@ -1,34 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALL IN ONE</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All</title>
+  
+  <!-- css bind -->    
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="music-div">
-        <h1>TO MUSIC PAGE</h1>
-        <a href="Music.html" class="music-link" target="_self">Click me to here music</a>
-    </div>
-    <div class="music-div">
-        <h1>TO MOVIES PAGE</h1>
-        <a href="Movies.html" class="music-link" target="_self">Click me to here music</a>
-    </div>
-    <div class="music-div">
-        <h1>TO MEZIMUR PAGE</h1>
-        <a href="Mezmur.html" class="music-link" target="_self">Click me to here music</a>
-    </div>
-    <div class="music-div">
-        <h1>TO E-LEARNING PAGE</h1>
-        <a href="Learning.html" class="music-link" target="_self">Click me to here music</a>
-    </div>
-        <div class="music-div">
-        <h1>TO Social media page</h1>
-        <a href="social.html" class="music-link" target="_self">Click me to here music</a>
-    </div>
+  <!-- Toggle Button -->
+  <button id="toggle-btn" class="toggle-btn">&#9776;</button>
+    
+  <!-- Sidebar Navigation (Initially Hidden) -->
+   <nav class="sidebar hidden">
+    <ul>
+      <li>
+        <a href="All.html">
+          <span>
+            <img src="image/home-button.png" alt="logo" width="20" height="20"> 
+            Home
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="dropdown-btn">Content <span>&#x25BC;</span></a>
+          <ul class="dropdown">
+            <li>
+              <a href="Music.html">
+                <span>
+                  <img src="image/musical-note.png" alt="logo" width="10" height="10"> 
+                  Music
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="Movies.html">
+                <span>
+                  <img src="image/video-player.png" alt="logo" width="10" height="10">
+                  Movies
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="Social.html">
+                <span>
+                  <img src="image/social-media.png" alt="logo" width="10" height="10">
+                  Media
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="Learning.html">
+                <span>
+                  <img src="image/online-lesson.png" alt="logo" width="10" height="10">
+                  learning
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="Mezmur.html">
+                <span>
+                  <img src="image/OT.PNG" alt="logo" width="10" height="10">
+                  መዝሙር
+                </span>
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- Main Content Area -->
+    <main class="content full-width">
+      <header> <h1>Welcome</h1></header>
 
-  <script src="java.js"></script> 
+      <!-- Music  Section -->      
+      <main class="man">
+         <!-- navigation bar  Section -->    
+        <nav>
+          <a href="All.html" onclick="showContent('div-esa')">Home</a>
+          <a href="Music.html">Music</a>
+          <a href="Movies.html">Movie</a>
+          <a href="Social.html">Social Media</a>
+          <a href="Learning.html">E-Learning</a>
+          <a href="Mezmur.html">መዝሙር </a>
+        </nav>
+
+        <section class="A" id="music">
+          <h2>Music</h2>
+          <ul>
+            <li class="aa"><p>Experience the rhythm of life with our Music Trial section. From soulful melodies to electrifying beats, discover a world of sound that resonates with your soul. Whether you're seeking inspiration or pure relaxation, let the music take you on a journey like no other!.</p></li>
+          </ul>
+          <div class="con">
+            <audio controls>
+              <source src="file/music.m4a" type="audio/mp3">
+            </audio>
+            <button>
+              <a href="Music.html" onclick="showContent('div-Tad')">
+                <span>
+                  <img src="image/musical-note.png" alt="logo" width="20" height="20">
+                  <i>Music</i>
+                </span> 
+              </a>
+            </button>
+          </div>
+        </section>
+
+        <!-- Movie  Section -->
+        <section class="A" id="music">
+          <h2>Movie</h2>
+          <ul>
+            <li class="aa"><p>Step into the world of cinematic wonders with our Movie feature! Watch exclusive movies of the latest blockbusters, timeless classics, and hidden gems. Get a sneak peek into the stories that captivate millions and find your next movie adventure right here.</p></li>
+          </ul>
+          <div class="con">
+            <video controls>
+              <source src="file/video.mp4" type="video/mp4" width="200" height="200">
+            </video>
+            <button>
+              <a href="Movies.html" onclick="showContent('div-Tad')">
+                <span>
+                  <img src="image/video-player.png" alt="logo" width="20" height="20">
+                  <i>Movie</i>
+                </span> 
+              </a>
+            </button>
+          </div>
+        </section>
+
+        <!-- Social Media  Section -->
+        <section class="A" id="music">
+          <h2>Social Media</h2>
+          <ul>
+            <li class="aa"><p>Connect, share, and explore! Our Social Media hub brings you closer to friends, trends, and the world. Discover a vibrant space where stories unfold, ideas inspire, and communities thrive. Your journey to meaningful connections starts here!.</p></li>
+          </ul>
+          <div class="con">
+            <button>
+              <a href="Social.html" onclick="showContent('div-Tad')">
+                <span>
+                  <img src="image/social-media.png" alt="logo" width="20" height="20">
+                  <i>Social Media</i>
+                </span> 
+              </a>
+            </button>
+          </div>
+        </section>
+
+        <!-- E-learning  Section -->
+        <section class="A" id="music">
+          <h2>E-learning</h2>
+          <ul>
+            <li class="aa"><p>Unlock your potential with our E-Learning platform! Explore a wide range of courses, resources, and tools designed to fuel your growth and creativity. Whether you're upskilling, pursuing passions, or advancing your career, learning has never been more accessible or exciting.</p></li>
+          </ul>
+          <div class="con">
+            <button>
+              <a href="Learning.html" onclick="showContent('div-Tad')">
+                <span>
+                  <img src="image/online-lesson.png" alt="logo" width="20" height="20">
+                  <i>E-learning</i>
+                </span> 
+              </a>
+            </button>
+          </div>
+        </section>
+
+        <!-- መዝሙር  Section -->
+        <section class="A" id="music">
+          <h2>መዝሙር</h2>
+          <ul>
+            <li class="aa"><p>Immerse yourself in the soulful melodies of Mezmur. Uplifting, spiritual, and deeply moving, these hymns are a testament to faith and devotion. Let the harmonious voices and heartfelt lyrics bring peace to your soul and strengthen your spirit.</p></li>
+          </ul>
+          <div class="con">
+            <button>
+              <a href="Mezmur.html" onclick="showContent('div-Tad')">
+                <span>
+                  <img src="image/OT.PNG" alt="logo" width="20" height="20">
+                  <i>መዝሙር</i>
+                </span> 
+              </a>
+            </button>
+          </div>
+        </section>
+        <!-- end of the main section -->    
+      </main>
+      
+      <!-- footer section -->    
+      <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+      </footer>
+
+    </main>
+
+    <!-- Js bind -->  
+
+    <script src="java.js"></script> 
 </body>
 </html>
+
+
