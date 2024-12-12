@@ -1,113 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All in one</title>
+  <style>
+  /* styles.css */
   body {
-    background-color: rgb(140, 151, 119);
     font-family: Arial, sans-serif;
-}
-
-/* Styling the header */
-h1{
-    background-color: #9fbea8; /* Light grey background */
-    padding: 30px;             /* Padding inside the div */
-    border: 1px solid #ccc;    /* Light grey border */
-    border-radius: 10px;       /* Rounded corners */
-    text-align: center;        /* Center text inside the div */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    max-width: 100%;          /* Max width for the div */
-    margin:0px;
-    font-size: 25px; 
-    color: brown;
-}
-h2 {
-    color: rgb(215, 215, 230);
-    font-size: 15px;
-    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+  }
+  /* header Styling */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-}
-/* Style for the english music */
-.English-page {
-    background-color: #3a7474; /* Light grey background */
-    padding: 30px;             /* Padding inside the div */
-    border: 1px solid #ccc;    /* Light grey border */
-    border-radius: 10px;       /* Rounded corners */
-    text-align: center;        /* Center text inside the div */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    max-width: 300px;          /* Max width for the div */
-    margin:0px;         /* Center div on the page */
-
-}
-/* Style for the amaharic music */
-.amaharic-page {
-    background-color: #3a7474; /* Light grey background */
-    padding: 30px;             /* Padding inside the div */
-    border: 1px solid #ccc;    /* Light grey border */
-    border-radius: 10px;       /* Rounded corners */
-    text-align: center;        /* Center text inside the div */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    max-width: 300px;          /* Max width for the div */
-    margin:0px;         /* Center div on the page */
-
-}
-
-/* Style for the ye bahil music */
-.bahil-page {
-    background-color: #3a7474; /* Light grey background */
-    padding: 30px;             /* Padding inside the div */
-    border: 1px solid #ccc;    /* Light grey border */
-    border-radius: 10px;       /* Rounded corners */
-    text-align: center;        /* Center text inside the div */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    max-width: 300px;          /* Max width for the div */
-    margin:0px;         /* Center div on the page */
-
-}
-
-
-/* Style for the anchor inside the div */
-.english-link {
-    color: #79c514;            /* Blue text color */
-    font-size: 18px;           /* Font size for the link */
-    text-decoration: none;     /* Remove underline */
-    font-weight: bold;         /* Bold font */
-    display: inline-block;     /* Allows padding to be applied */
-    padding: 10px 15px;        /* Padding for the link */
-    border-radius: 5px;        /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-}
-
-/* Hover effect for the link */
-.english-link:hover {
-    background-color: #3498db; /* Blue background on hover */
-    color: white;              /* White text on hover */
-}
-
-    </style>
+  }
+  
+  /* Navigation Bar Styling */
+  nav {
+    text-align: center;
+    background-color: #444;
+    padding: 10px 0;
+  }
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  nav a:hover {
+    background-color: aqua;
+  
+  }
+   
+  /* Main body Styling */
+  main {
+    padding: 2rem;
+    background-color: #cac7c7;
+  }
+  
+  /* Section header  Styling */  
+  section h2 {
+    background-color: rgb(140, 183, 88);
+    border-radius: 10px;
+    margin-top: 0;
+    width: 50%;
+    text-align: center;
+  }
+  
+  /* Entire content Styling */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:transparent;
+  }
+  
+  /* Music and video trial Styling */
+  video, audio {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+  }
+   
+  /* Button Styling */
+  button {
+   background: #bfce6c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  button:hover {
+    background: #0056b3;
+  }
+   
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /*Section part Styling */
+  .A {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        background: #68704e;
+        border-radius: 8px;
+  }
+  .B {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background: #68704e;
+    border-radius: 8px;
+  }
+  .C {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background: #68704e;
+    border-radius: 8px;
+  }
+  .D {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background: #68704e;
+    border-radius: 8px;
+  }
+  .E {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background: #68704e;
+    border-radius: 8px;
+  }
+  </style>
 </head>
 <body>
-    <h1>WELLCOME TO MUSIC PAGE</h1>
-    <div class="English-page">
-        <h2>Englis music page</h2>
-        <a href="https://www.youtube.com/watch?v=OPf0YbXqDm0&list=RDQMXpyvmDHjJLo&start_radio=1" class="english-link" target="_self">click here to Enlish music</a>
+    <header>
+        <h1><em>WELLCOME TO MUSIC PAGE</em></h1>
+    </header>
+    <nav>
+        <a href="All.html" onclick="showContent('div-esa')">Home</a>
+        <a href="https://open.spotify.com/"> <i>Spotify</i></a>
+        <a href="https://music.apple.com/us/new"><i>Apple Music</i></a>
+        <a href="https://www.youtube.com/watch?v=OPf0YbXqDm0&list=RDQMXpyvmDHjJLo&start_radio=1"> <i>Youtube Music</i></a>
+        <a href="https://soundcloud.com/"><i>Sound Cloud</i></a>
+        <a href="https://www.youtube.com/@NahomRecordsIncMusic"><i>Amaharic</i></a>
+        <a href="https://www.youtube.com/channel/UCAvCL8hyXjSUHKEGuUPr1BA"><i>English</i></a>
+    </nav>
+    <main>
+        <!-- Youtube  Section -->
+         <section class="A" id="music">
+            <h2>Meri podcast</h2>
+            <div class="content">
+                <button>
+                    <a href="https://www.youtube.com/@meripodcast" class="a" target="_self">
+                        <span>
+                            <img src="image/musical-note.png" alt="logo" width="20" height="20">
+                            <i>Meri</i>
+                        </span> 
+                    </a>
+                </button>
+            </div>
+        </section>
 
-    </div>
-    <div class="amaharic-page">
-        <h2>Amaharic music page</h2>
-        <a href="https://www.youtube.com/watch?v=OPf0YbXqDm0&list=RDQMXpyvmDHjJLo&start_radio=1" class="english-link" target="_self">click here to Enlish music</a>
+        <!-- Tiktok  Section -->
+        <section class="B" id="music">
+            <h2>Wecher Good Podcast</h2>
+            <div class="content">
+                <button>
+                    <a href="https://www.youtube.com/@WECHEWGOOD" onclick="showContent('div-Tad')">
+                        <span>
+                            <img src="image/musical-note.png" alt="logo" width="20" height="20">
+                            <i>Wecher</i>
+                        </span> 
+                    </a>
+                </button>
+            </div>
+        </section>
+        <!-- Facebook   Section -->
+        <section class="D" id="music">
+            <h2>Motivation-Study</h2>
+            <div class="content">
+                <button>
+                    <a href="https://www.youtube.com/@Motivation2Study" onclick="showContent('div-Tad')">
+                        <span>
+                            <img src="image/musical-note.png" alt="logo" width="20" height="20">
+                            <i>Motivation</i>
+                        </span> 
+                    </a>
+                </button>
+            </div>
+        </section>
 
-    </div>
+         <!-- Instagram  Section -->
+         <section class="E" id="music">
+            <h2>Allin Podcast</h2>
+            <div class="content">
+                <button>
+                    <a href="https://www.youtube.com/@allin" onclick="showContent('div-Tad')">
+                        <span>
+                            <img src="image/musical-note.png" alt="logo" width="20" height="20">
+                            <i>Allin</i>
+                        </span> 
+                    </a>
+                </button>
+            </div>
+        </section>
+          <!-- Linkedin  Section -->
+          <section class="E" id="music">
+            <h2>English</h2>
+            <div class="content">
+                <button>
+                    <a href="https://www.youtube.com/channel/UCNL1ZadSjHpjm4q9j2sVtOA" onclick="showContent('div-Tad')">
+                        <span>
+                            <img src="image/musical-note.png" alt="logo" width="20" height="20">
+                            <i>English</i>
+                        </span> 
+                    </a>
+                </button>
+            </div>
+        </section>
+         <!-- Google  Section -->
+         <section class="E" id="music">
+            <h2>Amaharic Music</h2>
+            <ul>
+            <div class="content">
+                <button>
+                    <a href="https://www.youtube.com/@hopemusicethiopia" onclick="showContent('div-Tad')">
+                        <span>
+                            <img src="image/musical-note.png" alt="logo" width="20" height="20">
+                            <i>Amaharic</i>
+                        </span> 
+                    </a>
+                </button>
+            </div>
+        </section>               
+    </main>
+  
+    <script src="java.js"></script> 
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
 
-    <div class="bahil-page">
-        <h2>Traditional music page</h2>
-        <a href="https://youtu.be/mUW7lu0HP38?list=PLa7cTcDG0P9MQ8lWQsvNi1E93SUF4Yt5s" class="english-link" target="_self">click here to Enlish music</a>
-
-    </div>
-    
 </body>
 </html>
